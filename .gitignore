@@ -10,3 +10,7 @@ whitelist.json
 world/
 world_nether/
 world_the_end/
+plugins/Brewery/worlddata.yml
+plugins/Brewery/configs/*
+plugins/Brewery/languages/*
+plugins/Brewery/data.yml
