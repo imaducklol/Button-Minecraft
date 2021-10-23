@@ -4,6 +4,7 @@ eula.txt
 logs/
 ops.json
 paper-1.17.1-*.jar
+server.properties
 usercache.json
 version_history.json
 whitelist.json
