@@ -3,7 +3,7 @@ cache/
 eula.txt
 logs/
 ops.json
-paper-1.17.1-349.jar
+paper-1.17.1-[0-9].jar
 usercache.json
 version_history.json
 whitelist.json
