@@ -30,7 +30,7 @@ command_vouch:
 
 # The permission group that will be given to new players.
 # Default: "default"
-default_group: "default"
+default_group: "user"
 
 # The permission groups. A player can have multiple permission groups assigned.
 # Permission groups can inherit other permission groups by specifying
