@@ -8,7 +8,7 @@
 
 
 # <time> after which the soul can be collected by anyone
-soul-free-after: 12h
+soul-free-after: 6h
 # <time> after which the soul disappears
 soul-fades-after: never
 
