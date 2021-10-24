@@ -153,7 +153,7 @@ resource_pack:
 
   # Resource pack SHA-1 sum. Required to verify resource pack integrity.
   # Default: ""
-  sha1: ""
+  sha1: "4495704a17ca22c60795b3a4a1beeeb6eebee289"
 
   # URL to an resource pack. Will request players to use the specified resource
   # pack. [as of 1.16.2] Beware that the minecraft client currently has issues
@@ -163,7 +163,7 @@ resource_pack:
   # is not a security issue, as the file will be verified via its sha1 sum by the
   # client.
   # Default: "https://your-server.tld/path/to/pack.zip"
-  url: "https://your-server.tld/path/to/pack.zip"
+  url: "https://github.com/imaducklol/Button-Minecraft/raw/main/vane-resource-pack.zip"
 
 # DO NOT CHANGE! The version of this config file. Used to determine if the config
 # needs to be updated.
