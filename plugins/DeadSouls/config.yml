@@ -16,7 +16,7 @@ soul-fades-after: never
 #   normal: no change
 #   disabled: souls are not created in PvP, items and XP drops like in vanilla Minecraft
 #   free: created souls are immediately free and can be collected by anyone
-pvp-behavior: normal
+pvp-behavior: free
 
 # Patterns for names or UUIDs of worlds in which soul creation is enabled.
 # The asterisk (*) character stands in for 0 or more arbitrary characters.
@@ -32,7 +32,7 @@ worlds: [ "*" ]
 # <percent> of experience points retained by souls
 # OR <xp-per-level> to retain by soul. Vanilla behavior is 7 xp-per-level.
 # Soul will never retain more xp than the player has collected.
-retained-xp: 90%
+retained-xp: 60%
 
 # Souls will not be placed directly where the player has died, but at the last
 # player's location which is considered safe (unless it is too far away).
