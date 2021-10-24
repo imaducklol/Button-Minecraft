@@ -4,6 +4,7 @@ eula.txt
 logs/
 ops.json
 paper-1.17.1-*.jar
+server.properties
 usercache.json
 version_history.json
 whitelist.json
@@ -16,3 +17,5 @@ plugins/Brewery/configs/*
 plugins/Brewery/languages/*
 plugins/Brewery/data.yml
 plugins/SetHome/Homes.yml
+plugins/CoreProtect/database.db
+storage.json
