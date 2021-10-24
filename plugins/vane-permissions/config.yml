@@ -62,11 +62,10 @@ groups:
 #    - vane.permissions.groups.user
 #    - vane.permissions.commands.vouch
   admin:
-    - vane.permissions.groups.verified
+    - vane.permissions.groups.user
     - vane.admin.bypass_spawn_protection
     - vane.*.commands.*
   user:
-    - vane.permissions.groups.default
     - vane.admin.commands.spawn
     - vane.admin.modify_world
 #    - vane.regions.commands.region
