@@ -54,10 +54,8 @@ default_group: "user"
 #     - vane.regions.commands.region
 #     - vane.trifles.commands.heads
 groups:
-#  default:
-#    - bukkit.command.help
-#    - bukkit.broadcast
-#    - bukkit.broadcast.user
+  default:
+    - vane.permissions.groups.user
 #  verified:
 #    - vane.permissions.groups.user
 #    - vane.permissions.commands.vouch
@@ -65,10 +63,13 @@ groups:
     - vane.permissions.groups.user
     - vane.admin.bypass_spawn_protection
     - vane.*.commands.*
+    - coreprotect.*
+    - minecraft.*
+    - bukkit.*
   user:
     - vane.admin.commands.spawn
     - vane.admin.modify_world
-#    - vane.regions.commands.region
+#   - vane.regions.commands.region
     - vane.trifles.commands.heads
     - brewery.user
     - brewery.cmd.info
@@ -80,12 +81,13 @@ groups:
     - com.darkyen.minecraft.deadsouls.hassoul.items
     - com.darkyen.minecraft.deadsouls.souls
     - com.darkyen.minecraft.deadsouls.souls.free
-#    - coreprotect.* ? not sure what to give who with coreprotect
     - dropheads.canlosehead
     - dropheads.canbehead 
     - imageonmap.*
     - smoothtimber.use
     - smoothtimber.toggle
+    - minecraft.command.msg
+    - minecraft.command.me
 
 # Remove all default permissions to start with a clean preset.
 # Default: true
