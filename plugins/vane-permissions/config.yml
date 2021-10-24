@@ -22,7 +22,7 @@ command_permission:
 command_vouch:
   # Enable command vouch
   # Default: true
-  enabled: true
+  enabled: false
 
   # The group to assign to players when someone vouches for them.
   # Default: "user"
@@ -54,13 +54,13 @@ default_group: "user"
 #     - vane.regions.commands.region
 #     - vane.trifles.commands.heads
 groups:
-  default:
-    - bukkit.command.help
-    - bukkit.broadcast
-    - bukkit.broadcast.user
-  verified:
-    - vane.permissions.groups.user
-    - vane.permissions.commands.vouch
+#  default:
+#    - bukkit.command.help
+#    - bukkit.broadcast
+#    - bukkit.broadcast.user
+#  verified:
+#    - vane.permissions.groups.user
+#    - vane.permissions.commands.vouch
   admin:
     - vane.permissions.groups.verified
     - vane.admin.bypass_spawn_protection
@@ -69,8 +69,24 @@ groups:
     - vane.permissions.groups.default
     - vane.admin.commands.spawn
     - vane.admin.modify_world
-    - vane.regions.commands.region
+#    - vane.regions.commands.region
     - vane.trifles.commands.heads
+    - brewery.user
+    - brewery.cmd.info
+    - bukkit.command.help
+    - bukkit.broadcast
+    - bukkit.broadcast.user
+    - com.darkyen.minecraft.deadsouls.hassoul 
+    - com.darkyen.minecraft.deadsouls.hassoul.xp 
+    - com.darkyen.minecraft.deadsouls.hassoul.items
+    - com.darkyen.minecraft.deadsouls.souls
+    - com.darkyen.minecraft.deadsouls.souls.free
+#    - coreprotect.* ? not sure what to give who with coreprotect
+    - dropheads.canlosehead
+    - dropheads.canbehead 
+    - imageonmap.*
+    - smoothtimber.use
+    - smoothtimber.toggle
 
 # Remove all default permissions to start with a clean preset.
 # Default: true
