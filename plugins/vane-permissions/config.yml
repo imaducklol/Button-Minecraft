@@ -67,6 +67,15 @@ groups:
     - minecraft.*
     - bukkit.*
     - GSit.*
+    - minecraft
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - bukkit.broadcast.user
+    - bukkit.command
+    - bukkit.command.help
+    - bukkit.command.plugins
+    - bukkit.command.reload
+    - bukkit.command.version
   user:
     - vane.permissions.commands.vouch
     - vane.admin.commands.spawn
@@ -76,7 +85,7 @@ groups:
     - brewery.user
     - brewery.cmd.info
     - bukkit.command.help
-    - bukkit.broadcast
+#   - bukkit.broadcast
     - bukkit.broadcast.user
     - com.darkyen.minecraft.deadsouls.hassoul 
     - com.darkyen.minecraft.deadsouls.hassoul.xp 
@@ -88,11 +97,12 @@ groups:
     - imageonmap.*
     - smoothtimber.use
     - smoothtimber.toggle
-    - minecraft.command.msg
+    - minecraft.command.help
     - minecraft.command.me
     - GSit.Sit
     - GSit.SitCommand
     - GSit.SitToggle
+    - minecraft.command.msg
 
 # Remove all default permissions to start with a clean preset.
 # Default: true

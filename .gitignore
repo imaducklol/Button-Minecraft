@@ -23,3 +23,4 @@ plugins/GSit/lang/*.yml
 plugins/GSit/data/s.data
 plugins/GSit/data/t.data
 plugins/ProtocolLib/lastupdate
+plugins/ImageOnMap/images/
