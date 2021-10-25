@@ -19,3 +19,6 @@ plugins/Brewery/data.yml
 plugins/SetHome/Homes.yml
 plugins/CoreProtect/database.db
 storage.json
+plugins/GSit/lang/*.yml
+plugins/GSit/data/s.data
+plugins/GSit/data/t.data

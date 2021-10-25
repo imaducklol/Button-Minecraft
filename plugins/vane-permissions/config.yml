@@ -66,6 +66,7 @@ groups:
     - coreprotect.*
     - minecraft.*
     - bukkit.*
+    - GSit.*
   user:
     - vane.admin.commands.spawn
     - vane.admin.modify_world
@@ -88,6 +89,9 @@ groups:
     - smoothtimber.toggle
     - minecraft.command.msg
     - minecraft.command.me
+    - GSit.Sit
+    - GSit.SitCommand
+    - GSit.SitToggle
 
 # Remove all default permissions to start with a clean preset.
 # Default: true
