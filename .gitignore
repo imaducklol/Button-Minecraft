@@ -20,3 +20,4 @@ plugins/SetHome/Homes.yml
 plugins/CoreProtect/database.db
 storage.json
 plugins/ProtocolLib/lastupdate
+plugins/ImageOnMap/images/

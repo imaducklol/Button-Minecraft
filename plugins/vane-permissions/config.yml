@@ -64,8 +64,15 @@ groups:
     - vane.admin.bypass_spawn_protection
     - vane.*.commands.*
     - coreprotect.*
-    - minecraft.*
-    - bukkit.*
+    - minecraft
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - bukkit.broadcast.user
+    - bukkit.command
+    - bukkit.command.help
+    - bukkit.command.plugins
+    - bukkit.command.reload
+    - bukkit.command.version
   user:
     - vane.permissions.commands.vouch
     - vane.admin.commands.spawn
