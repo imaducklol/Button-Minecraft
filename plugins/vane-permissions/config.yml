@@ -82,7 +82,7 @@ groups:
     - brewery.user
     - brewery.cmd.info
     - bukkit.command.help
-    - bukkit.broadcast
+#   - bukkit.broadcast
     - bukkit.broadcast.user
     - com.darkyen.minecraft.deadsouls.hassoul 
     - com.darkyen.minecraft.deadsouls.hassoul.xp 
@@ -94,8 +94,9 @@ groups:
     - imageonmap.*
     - smoothtimber.use
     - smoothtimber.toggle
-    - minecraft.command.msg
+    - minecraft.command.help
     - minecraft.command.me
+    - minecraft.command.msg
 
 # Remove all default permissions to start with a clean preset.
 # Default: true
