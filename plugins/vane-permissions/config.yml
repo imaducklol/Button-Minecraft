@@ -22,7 +22,7 @@ command_permission:
 command_vouch:
   # Enable command vouch
   # Default: true
-  enabled: false
+  enabled: true
 
   # The group to assign to players when someone vouches for them.
   # Default: "user"
@@ -30,7 +30,7 @@ command_vouch:
 
 # The permission group that will be given to new players.
 # Default: "default"
-default_group: "user"
+default_group: "default"
 
 # The permission groups. A player can have multiple permission groups assigned.
 # Permission groups can inherit other permission groups by specifying
@@ -68,6 +68,7 @@ groups:
     - bukkit.*
     - GSit.*
   user:
+    - vane.permissions.commands.vouch
     - vane.admin.commands.spawn
     - vane.admin.modify_world
 #   - vane.regions.commands.region
