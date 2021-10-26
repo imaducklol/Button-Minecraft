@@ -64,6 +64,9 @@ groups:
     - vane.admin.bypass_spawn_protection
     - vane.*.commands.*
     - coreprotect.*
+    - minecraft.*
+    - bukkit.*
+    - GSit.*
     - minecraft
     - bukkit.broadcast
     - bukkit.broadcast.admin
@@ -96,6 +99,9 @@ groups:
     - smoothtimber.toggle
     - minecraft.command.help
     - minecraft.command.me
+    - GSit.Sit
+    - GSit.SitCommand
+    - GSit.SitToggle
     - minecraft.command.msg
 
 # Remove all default permissions to start with a clean preset.
