@@ -64,8 +64,6 @@ groups:
     - vane.admin.bypass_spawn_protection
     - vane.*.commands.*
     - coreprotect.*
-    - minecraft.*
-    - bukkit.*
     - GSit.*
     - minecraft
     - bukkit.broadcast
