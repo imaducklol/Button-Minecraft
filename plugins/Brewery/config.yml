@@ -396,6 +396,16 @@ cauldron:
     color: 'ffecb3' # yellow-orange
     cookParticles:
       - 'ffecb3/2'
+      
+   sanitizer_base:
+    name: Viscus lubricant
+    ingredients:
+      - wheat
+      - bone_meal
+      - pufferfish
+     color: BRIGHT_GREY
+     
+      
 
 
 
@@ -760,6 +770,26 @@ recipes:
     wood: 0
     age: 3
     lore: Made with raw egg
+    
+    hand_sanitizer:
+      name: Liquid Soap/Rubbing Alcohol/Hand Sanitizer
+      ingredients:
+        - wheat/10
+        - bone_meal/1
+        - pufferfish/1
+      cookingtime: 2
+      distillruns: 3
+      color: BRIGHT_GREY
+      difficulty: 5
+      alcohol: 99
+      lore: DONT FUCKING DRINK IT, WASH YO GOD DAM HANS
+      effects:
+        - LEVITATION/255/3
+        - BLINDNESS/255/20
+        - SLOWFALLING/20
+     
+      
+      
 
 
 
