@@ -8,7 +8,7 @@
 language: en
 
 # If the player wakes up at /home when logging in after excessive drinking (/home plugin must be installed!) [true]
-enableHome: false
+enableHome: true
 
 # Type of the home-teleport: ['cmd: home']
 # bed = Player will be teleported to his spawn bed
@@ -76,7 +76,7 @@ maxBrewsInMCBarrels: 6
 # When using Brews on multiple (BungeeCord) Servers, define a shared Database below at 'multiServerDB'
 # So enable this if you want to make recipe cheating harder, but don't share any brews by world download, schematics, or other means. [false]
 enableEncode: false
-encodeKey: -7300078495341440628
+encodeKey: -5878999169066186731
 
 # Enable checking for Updates, Checks the curseforge api for updates to Brewery [true]
 # If an Update is found a Message is logged on Server-start and displayed to OPs joining the game
@@ -396,17 +396,14 @@ cauldron:
     color: 'ffecb3' # yellow-orange
     cookParticles:
       - 'ffecb3/2'
-      
-   sanitizer_base:
+
+  sanitizer_base:
     name: Viscus lubricant
     ingredients:
       - wheat
       - bone_meal
       - pufferfish
-     color: BRIGHT_GREY
-     
-      
-
+    color: BRIGHT_GREY
 
 
 # -- Recipes for Potions --
@@ -770,28 +767,23 @@ recipes:
     wood: 0
     age: 3
     lore: Made with raw egg
-    
-    hand_sanitizer:
-      name: Liquid Soap/Rubbing Alcohol/Hand Sanitizer
-      ingredients:
-        - wheat/10
-        - bone_meal/1
-        - pufferfish/1
-      cookingtime: 2
-      distillruns: 3
-      color: BRIGHT_GREY
-      difficulty: 5
-      alcohol: 99
-      lore: DONT FUCKING DRINK IT, WASH YO GOD DAM HANS
-      effects:
-        - LEVITATION/255/3
-        - BLINDNESS/255/20
-        - SLOWFALLING/20
-     
-      
-      
 
-
+  hand_sanitizer:
+    name: Liquid Soap/Rubbing Alcohol/Hand Sanitizer
+    ingredients:
+      - wheat/10
+      - bone_meal/1
+      - pufferfish/1
+    cookingtime: 2
+    distillruns: 3
+    color: BRIGHT_GREY
+    difficulty: 5
+    alcohol: 99
+    lore: DONT FUCKING DRINK IT, WASH YO GOD DAM HANS
+    effects:
+      - LEVITATION/255/3
+      - BLINDNESS/255/20
+      - SLOW_FALLING/20
 
 
 # I don't want to add more Recipes to the default config, as they would be public and viewable by users to cheat.
