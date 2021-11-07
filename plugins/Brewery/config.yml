@@ -781,9 +781,9 @@ recipes:
     alcohol: 99
     lore: DONT FUCKING DRINK IT, WASH YO GOD DAM HANS
     effects:
-      - LEVITATION/255/3
-      - BLINDNESS/255/20
-      - SLOW_FALLING/20
+      - LEVITATION/255/12
+      - BLINDNESS/255/80
+      - SLOW_FALLING/40
 
 
 # I don't want to add more Recipes to the default config, as they would be public and viewable by users to cheat.
