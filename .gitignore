@@ -27,3 +27,6 @@ plugins/ImageOnMap/images/
 plugins/ImageOnMap/maps/
 libraries/
 versions/
+plugins/LuckPerms/libs
+plugins/LuckPerms/translations
+plugins/CoreProtect/language.yml
