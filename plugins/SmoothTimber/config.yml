@@ -1,4 +1,3 @@
-version: 8
 global:
   debug: false
   sync-time: 50
@@ -40,3 +39,4 @@ worlds:
   list:
   - world
   - world_nether
+  - world_the_end

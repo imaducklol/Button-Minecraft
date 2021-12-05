@@ -3,7 +3,7 @@ cache/
 eula.txt
 logs/
 ops.json
-paper-1.17.1-*.jar
+paper-1.18-*.jar
 server.properties
 usercache.json
 version_history.json
@@ -25,3 +25,8 @@ plugins/GSit/data/t.data
 plugins/ProtocolLib/lastupdate
 plugins/ImageOnMap/images/
 plugins/ImageOnMap/maps/
+libraries/
+versions/
+plugins/LuckPerms/libs
+plugins/LuckPerms/translations
+plugins/CoreProtect/language.yml

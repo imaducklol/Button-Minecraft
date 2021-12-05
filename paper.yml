@@ -11,60 +11,46 @@
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
-config-version: 23
+config-version: 24
 settings:
+  track-plugin-scoreboards: false
+  fix-entity-position-desync: true
   use-display-name-in-quit-message: false
   load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
-  enable-player-collisions: true
-  save-empty-scoreboard-teams: false
-  bungee-online-mode: true
-  incoming-packet-spam-threshold: 300
+  suggest-player-names-when-null-tab-completions: true
   use-alternative-luck-formula: false
+  lag-compensate-block-breaking: true
+  save-empty-scoreboard-teams: false
   console-has-all-permissions: false
+  enable-player-collisions: true
+  incoming-packet-spam-threshold: 300
+  max-joins-per-tick: 3
+  bungee-online-mode: true
+  log-player-ip-addresses: true
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
-  max-joins-per-tick: 3
-  track-plugin-scoreboards: false
-  fix-entity-position-desync: true
-  lag-compensate-block-breaking: true
   send-full-pos-for-hard-colliding-entities: true
-  suggest-player-names-when-null-tab-completions: true
-  log-player-ip-addresses: true
-  velocity-support:
-    enabled: false
-    online-mode: false
-    secret: ''
-  async-chunks:
-    threads: -1
   unsupported-settings:
-    allow-permanent-block-break-exploits: false
     allow-piston-duplication: false
     allow-headless-pistons: false
-    allow-permanent-block-break-exploits-readme: This setting controls if players
-      should be able to break bedrock, end portals and other intended to be permanent
-      blocks.
+    allow-permanent-block-break-exploits: false
     allow-piston-duplication-readme: This setting controls if player should be able
       to use TNT duplication, but this also allows duplicating carpet, rails and potentially
       other items
     allow-headless-pistons-readme: This setting controls if players should be able
       to create headless pistons.
+    allow-permanent-block-break-exploits-readme: This setting controls if players
+      should be able to break bedrock, end portals and other intended to be permanent
+      blocks.
   watchdog:
     early-warning-every: 5000
     early-warning-delay: 10000
   spam-limiter:
-    tab-spam-increment: 1
-    tab-spam-limit: 500
     recipe-spam-increment: 1
     recipe-spam-limit: 20
-  book-size:
-    page-max: 2560
-    total-multiplier: 0.98
-  loggers:
-    deobfuscate-stacktraces: true
-  console:
-    enable-brigadier-highlighting: true
-    enable-brigadier-completions: true
+    tab-spam-increment: 1
+    tab-spam-limit: 500
   item-validation:
     display-name: 8192
     loc-name: 8192
@@ -73,16 +59,15 @@ settings:
       title: 8192
       author: 8192
       page: 16384
-  chunk-loading:
-    min-load-radius: 2
-    max-concurrent-sends: 2
-    autoconfig-send-distance: true
-    target-player-chunk-send-rate: 100.0
-    global-max-chunk-send-rate: -1.0
-    enable-frustum-priority: false
-    global-max-chunk-load-rate: -1.0
-    player-max-concurrent-loads: 4.0
-    global-max-concurrent-loads: 500.0
+  velocity-support:
+    enabled: false
+    online-mode: false
+    secret: ''
+  async-chunks:
+    threads: -1
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
   packet-limiter:
     kick-message: '&cSent too many packets'
     limits:
@@ -93,14 +78,19 @@ settings:
         interval: 4.0
         max-packet-rate: 5.0
         action: DROP
+  loggers:
+    deobfuscate-stacktraces: true
+  book-size:
+    page-max: 2560
+    total-multiplier: 0.98
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
   kick:
-    authentication-servers-down: ''
     connection-throttle: Connection throttled! Please wait before reconnecting.
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
+    authentication-servers-down: ''
 timings:
   enabled: true
   verbose: true
@@ -115,99 +105,89 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
-    disable-teleportation-suffocation-check: false
-    ender-dragons-death-always-places-dragon-egg: false
-    piglins-guard-chests: true
-    should-remove-dragon: false
-    max-auto-save-chunks-per-tick: 24
-    baby-zombie-movement-modifier: 0.5
-    optimize-explosions: false
-    fixed-chunk-inhabited-time: -1
-    use-vanilla-world-scoreboard-name-coloring: false
-    remove-corrupt-tile-entities: false
-    experience-merge-max-value: -1
-    prevent-moving-into-unloaded-chunks: false
-    count-all-mobs-for-spawning: false
-    allow-using-signs-inside-spawn-protection: false
-    falling-block-height-nerf: 0
-    tnt-entity-height-nerf: 0
-    filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 8
-    disable-creeper-lingering-effect: false
-    duplicate-uuid-resolver: saferegen
-    duplicate-uuid-saferegen-delete-range: 32
-    phantoms-do-not-spawn-on-creative-players: true
-    phantoms-only-attack-insomniacs: true
-    update-pathfinding-on-block-update: true
-    fix-wither-targeting-bug: false
-    map-item-frame-cursor-update-interval: 10
-    allow-player-cramming-damage: false
-    seed-based-feature-search: true
-    seed-based-feature-search-loads-chunks: true
-    water-over-lava-flow-speed: 5
-    grass-spread-tick-rate: 1
-    use-faster-eigencraft-redstone: false
-    nether-ceiling-void-damage-height: 0
-    parrots-are-unaffected-by-player-movement: false
-    fix-items-merging-through-walls: false
-    keep-spawn-loaded: true
-    disable-thunder: false
-    skeleton-horse-thunder-spawn-chance: 0.01
-    disable-ice-and-snow: false
-    keep-spawn-loaded-range: 10
-    disable-explosion-knockback: false
     only-players-collide: false
     allow-vehicle-collisions: true
+    nether-ceiling-void-damage-height: 0
     allow-non-player-entities-on-scoreboards: false
+    enable-treasure-maps: true
+    treasure-maps-return-already-discovered: false
+    max-leash-distance: 10.0
+    skeleton-horse-thunder-spawn-chance: 0.01
+    fix-items-merging-through-walls: false
+    container-update-tick-rate: 1
     portal-search-radius: 128
     portal-create-radius: 16
     portal-search-vanilla-dimension-scaling: true
-    container-update-tick-rate: 1
-    armor-stands-do-collision-entity-lookups: true
+    keep-spawn-loaded: true
+    grass-spread-tick-rate: 1
+    disable-thunder: false
+    disable-ice-and-snow: false
+    keep-spawn-loaded-range: 10
+    parrots-are-unaffected-by-player-movement: false
+    disable-explosion-knockback: false
     fix-climbing-bypassing-cramming-rule: false
-    prevent-tnt-from-moving-in-water: false
+    armor-stands-do-collision-entity-lookups: true
     show-sign-click-command-failure-msgs-to-player: false
-    iron-golems-can-spawn-in-air: false
-    max-leash-distance: 10.0
-    delay-chunk-unloads-by: 10s
-    split-overstacked-loot: true
-    armor-stands-tick: true
     non-player-arrow-despawn-rate: -1
     creative-arrow-despawn-rate: -1
     spawner-nerfed-mobs-should-jump: false
     entities-target-with-follow-range: false
+    split-overstacked-loot: true
+    map-item-frame-cursor-limit: 128
+    water-over-lava-flow-speed: 5
+    use-faster-eigencraft-redstone: false
+    prevent-tnt-from-moving-in-water: false
+    iron-golems-can-spawn-in-air: false
+    mob-spawner-tick-rate: 1
+    armor-stands-tick: true
     zombies-target-turtle-eggs: true
     zombie-villager-infection-chance: -1.0
     all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 1
-    per-player-mob-spawns: true
-    map-item-frame-cursor-limit: 128
+    fixed-chunk-inhabited-time: -1
+    remove-corrupt-tile-entities: false
+    disable-teleportation-suffocation-check: false
     light-queue-size: 20
     auto-save-interval: -1
-    enable-treasure-maps: true
-    treasure-maps-return-already-discovered: false
-    generator-settings:
-      flat-bedrock: false
-    entity-per-chunk-save-limit:
-      experience_orb: -1
-      snowball: -1
-      ender_pearl: -1
-      arrow: -1
-      fireball: -1
-      small_fireball: -1
+    delay-chunk-unloads-by: 10s
+    per-player-mob-spawns: true
+    should-remove-dragon: false
+    optimize-explosions: false
+    piglins-guard-chests: true
+    experience-merge-max-value: -1
+    falling-block-height-nerf: 0
+    tnt-entity-height-nerf: 0
+    max-entity-collisions: 8
+    phantoms-do-not-spawn-on-creative-players: true
+    phantoms-only-attack-insomniacs: true
+    ender-dragons-death-always-places-dragon-egg: false
+    allow-using-signs-inside-spawn-protection: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    prevent-moving-into-unloaded-chunks: false
+    count-all-mobs-for-spawning: false
+    max-auto-save-chunks-per-tick: 24
+    baby-zombie-movement-modifier: 0.5
+    filter-nbt-data-from-spawn-eggs-and-related: true
+    duplicate-uuid-resolver: saferegen
+    duplicate-uuid-saferegen-delete-range: 32
+    disable-creeper-lingering-effect: false
+    update-pathfinding-on-block-update: true
+    allow-player-cramming-damage: false
+    map-item-frame-cursor-update-interval: 10
+    feature-seeds:
+      generate-random-seeds-for-all: false
     game-mechanics:
-      scan-for-legacy-ender-dragon: true
-      fix-curing-zombie-villager-discount-exploit: true
-      disable-pillager-patrols: false
+      disable-mob-spawner-spawn-egg-transformation: false
+      disable-player-crits: false
+      disable-end-credits: false
+      shield-blocking-delay: 5
+      disable-sprint-interruption-on-attack: false
       disable-chest-cat-detection: false
       nerf-pigmen-from-nether-portals: false
-      disable-player-crits: false
-      disable-sprint-interruption-on-attack: false
-      shield-blocking-delay: 5
-      disable-end-credits: false
-      disable-unloaded-chunk-enderpearl-exploit: true
       disable-relative-projectile-velocity: false
-      disable-mob-spawner-spawn-egg-transformation: false
+      disable-unloaded-chunk-enderpearl-exploit: true
+      fix-curing-zombie-villager-discount-exploit: true
+      disable-pillager-patrols: false
+      scan-for-legacy-ender-dragon: true
       pillager-patrols:
         spawn-chance: 0.2
         spawn-delay:
@@ -216,73 +196,6 @@ world-settings:
         start:
           per-player: false
           day: 5
-    wandering-trader:
-      spawn-minute-length: 1200
-      spawn-day-length: 24000
-      spawn-chance-failure-increment: 25
-      spawn-chance-min: 25
-      spawn-chance-max: 75
-    door-breaking-difficulty:
-      zombie:
-      - HARD
-      vindicator:
-      - NORMAL
-      - HARD
-    max-growth-height:
-      cactus: 3
-      reeds: 3
-      bamboo:
-        max: 16
-        min: 11
-    fishing-time-range:
-      MinimumTicks: 100
-      MaximumTicks: 600
-    despawn-ranges:
-      soft: 32
-      hard: 128
-    frosted-ice:
-      enabled: true
-      delay:
-        min: 20
-        max: 40
-    lootables:
-      auto-replenish: false
-      restrict-player-reloot: true
-      reset-seed-on-fill: true
-      max-refills: -1
-      refresh-min: 12h
-      refresh-max: 2d
-    mobs-can-always-pick-up-loot:
-      zombies: false
-      skeletons: false
-    hopper:
-      cooldown-when-full: true
-      disable-move-event: false
-    mob-effects:
-      undead-immune-to-certain-effects: true
-      spiders-immune-to-poison-effect: true
-      immune-to-wither-effect:
-        wither: true
-        wither-skeleton: true
-    spawn-limits:
-      monsters: -1
-      animals: -1
-      water-animals: -1
-      water-ambient: -1
-      ambient: -1
-    alt-item-despawn-rate:
-      enabled: false
-      items:
-        COBBLESTONE: 300
-    tick-rates:
-      sensor:
-        villager:
-          secondarypoisensor: 40
-      behavior:
-        villager:
-          validatenearbypoi: -1
-    feature-seeds:
-      generate-random-seeds-for-all: false
     anti-xray:
       enabled: false
       engine-mode: 1
@@ -316,9 +229,109 @@ world-settings:
       - stone
       - oak_planks
       - deepslate
-    viewdistances:
-      no-tick-view-distance: -1
     unsupported-settings:
       fix-invulnerable-end-crystal-exploit: true
-    squid-spawn-height:
-      maximum: 0.0
+    generator-settings:
+      flat-bedrock: false
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+      bamboo:
+        max: 16
+        min: 11
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 600
+    despawn-ranges:
+      monster:
+        soft: 32
+        hard: 128
+      creature:
+        soft: 32
+        hard: 128
+      ambient:
+        soft: 32
+        hard: 128
+      axolotls:
+        soft: 32
+        hard: 128
+      underground_water_creature:
+        soft: 32
+        hard: 128
+      water_creature:
+        soft: 32
+        hard: 128
+      water_ambient:
+        soft: 32
+        hard: 64
+      misc:
+        soft: 32
+        hard: 128
+    frosted-ice:
+      enabled: true
+      delay:
+        min: 20
+        max: 40
+    lootables:
+      auto-replenish: false
+      restrict-player-reloot: true
+      reset-seed-on-fill: true
+      max-refills: -1
+      refresh-min: 12h
+      refresh-max: 2d
+    mob-effects:
+      undead-immune-to-certain-effects: true
+      spiders-immune-to-poison-effect: true
+      immune-to-wither-effect:
+        wither: true
+        wither-skeleton: true
+    alt-item-despawn-rate:
+      enabled: false
+      items:
+        COBBLESTONE: 300
+    tick-rates:
+      sensor:
+        villager:
+          secondarypoisensor: 40
+      behavior:
+        villager:
+          validatenearbypoi: -1
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
+    spawn-limits:
+      monster: -1
+      creature: -1
+      ambient: -1
+      axolotls: -1
+      underground_water_creature: -1
+      water_creature: -1
+      water_ambient: -1
+    wandering-trader:
+      spawn-minute-length: 1200
+      spawn-day-length: 24000
+      spawn-chance-failure-increment: 25
+      spawn-chance-min: 25
+      spawn-chance-max: 75
+    entity-per-chunk-save-limit:
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
+      fireball: -1
+      small_fireball: -1
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: false
+      ignore-occluding-blocks: true
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
+    anticheat:
+      obfuscation:
+        items:
+          hide-itemmeta: false
+          hide-durability: false
