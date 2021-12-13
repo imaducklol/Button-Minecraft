@@ -8,6 +8,7 @@ server.properties
 usercache.json
 version_history.json
 whitelist.json
+old_worlds/
 world/
 world_nether/
 world_the_end/
