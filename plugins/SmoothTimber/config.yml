@@ -1,3 +1,4 @@
+version: 8
 global:
   debug: false
   sync-time: 50

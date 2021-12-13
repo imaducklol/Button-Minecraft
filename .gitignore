@@ -30,3 +30,4 @@ versions/
 plugins/LuckPerms/libs
 plugins/LuckPerms/translations
 plugins/CoreProtect/language.yml
+plugins/LuckPerms/luckperms-h2.mv.db
