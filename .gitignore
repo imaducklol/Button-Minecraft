@@ -32,3 +32,8 @@ plugins/LuckPerms/libs
 plugins/LuckPerms/translations
 plugins/CoreProtect/language.yml
 plugins/LuckPerms/luckperms-h2.mv.db
+plugins/SetHome/Homes.yml
+plugins/DeadChest/locale.yml
+plugins/DeadChest/chestData.yml
+plugins/DropHeads/translations.yml
+plugins/DropHeads/head-textures.txt
