@@ -37,3 +37,5 @@ plugins/DeadChest/locale.yml
 plugins/DeadChest/chestData.yml
 plugins/DropHeads/translations.yml
 plugins/DropHeads/head-textures.txt
+plugins/DeadChest/deadchest.log
+plugins/DropHeads/dropheads-log.txt
