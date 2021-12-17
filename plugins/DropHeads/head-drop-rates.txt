@@ -1,4 +1,4 @@
-PLAYER:             0.250
+PLAYER:             1
 UNKNOWN: 0.0
 
 ARMOR_STAND: 0
